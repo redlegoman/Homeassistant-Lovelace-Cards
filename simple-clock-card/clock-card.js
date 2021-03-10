@@ -113,6 +113,7 @@ class ClockCard extends Polymer.Element {
           m = today.getMinutes(),
           s = today.getSeconds(),
 
+          h = this.addZero(h);
           m = this.addZero(m);
           s = this.addZero(s);
 
