@@ -172,14 +172,18 @@ class ClockCard extends Polymer.Element {
 
 
       if(this.config.show === 'date') {
-        this.time.innerHTML = event.toLocaleDateString(this.config.locale, { dateStyle : this.config.date_style });
-        this.date.innerHTML = '';
+        //this.time.innerHTML = event.toLocaleDateString(this.config.locale, { dateStyle : this.config.date_style });
+        this.time.innerHTML = '';
+        let date_str = D+" "+DOM+SFX+" "+M;
+        this.date.innerHTML = date_str;
         return;
       }
 
       if(this.config.show === 'time') {
-        this.time.innerHTML = event.toLocaleTimeString(this.config.locale, { timeStyle : this.config.time_style });
+        //this.time.innerHTML = event.toLocaleTimeString(this.config.locale, { timeStyle : this.config.time_style });
         this.date.innerHTML = '';
+        let time_str =  ( h ) + ":" + m + ":" + s;
+        this.time.innerHTML = time_str;
         return;
       }
     }
