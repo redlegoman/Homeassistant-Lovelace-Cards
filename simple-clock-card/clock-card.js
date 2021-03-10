@@ -7,6 +7,7 @@ class ClockCard extends Polymer.Element {
           }
           .content {
             padding: 24px 26px 26px;
+            align-items: center;
           }
           .name {
             margin-left: 16px;
@@ -14,20 +15,22 @@ class ClockCard extends Polymer.Element {
             color: var(--secondary-text-color);
           }
           .now {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
+            xdisplay: flex;
+            xjustify-content: space-between;
+            xalign-items: center;
+            xflex-wrap: wrap;
           }
           .main {
-            display: flex;
-            align-items: center;
-            margin-right: 32px;
+            xdisplay: flex;
+            xalign-items: center;
+            xmargin-right: 32px;
           }
           .main .clock {
             font-size: 152px;
             line-height: 1em;
-            position: relative;
+          }
+          .time {
+            align-items: center;
           }
           .date {
             padding: 24px 26px 26px;
@@ -45,13 +48,19 @@ class ClockCard extends Polymer.Element {
         <ha-card>
           <div class="content">
             <div class="now">
+  <center>
               <div class="main">
-                <div class="clock" id="time"></div>
-              </div>
-              <div class="date">
-                <div id="date"></div>
+  <center>
+                <div class="clock" id="time">
+                </div>
               </div>
             </div>
+  <center>
+              <div class="date">
+                <div id="date">
+                </div>
+              </div>
+            
           </div>
         </ha-card>
        `
